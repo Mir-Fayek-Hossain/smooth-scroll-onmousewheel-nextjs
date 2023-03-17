@@ -11,7 +11,7 @@ const SmoothScroll = ({ children }) => {
 
     // 3.
     const data = {
-        ease: 0.001 * 5,
+        ease: 0.01,
         current: 0,
         previous: 0,
         rounded: 0,
@@ -37,16 +37,18 @@ const SmoothScroll = ({ children }) => {
         };
     });
     const smoothScrollingHandler = () => {
-        data.current = window.scrollY;
-        data.previous += (data.current - data.previous) * data.ease;
-        data.rounded = Math.round(data.previous * 100) / 100;
-        scrollingContainerRef.current.style.transform = `translateY(-${data.rounded}px)`;
-        if (
-            data.current != data.rounded &&
-            data.rounded != Math.round(data.previous)
-        ) {
-            // Recursive call untill reached target view
-            requestAnimationFrame(() => smoothScrollingHandler());
+        if (scrollingContainerRef.current?.style) {
+            data.current = window.scrollY;
+            data.previous += (data.current - data.previous) * data.ease;
+            data.rounded = Math.round(data.previous * 100) / 100;
+            scrollingContainerRef.current.style.transform = `translateY(-${data.rounded}px)`;
+            if (
+                data.current != data.rounded &&
+                data.rounded != Math.round(data.previous)
+            ) {
+                // Recursive call untill reached target view
+                requestAnimationFrame(() => smoothScrollingHandler());
+            }
         }
     };
 
