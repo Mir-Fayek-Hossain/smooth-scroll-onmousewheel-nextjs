@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 
 import useWindowSize from "../hooks/useWindowSize";
+import { useRouter } from "next/router";
 
 const SmoothScroll = ({ children }) => {
     const router = useRouter();
