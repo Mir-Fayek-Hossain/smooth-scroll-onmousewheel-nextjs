@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import useWindowSize from "../hooks/useWindowSize";
 
 const SmoothScroll = ({ children }) => {
+    const router = useRouter();
     // 1.
     const windowSize = useWindowSize();
 
@@ -21,6 +22,7 @@ const SmoothScroll = ({ children }) => {
     useEffect(() => {
         setBodyHeight();
     }, [windowSize?.height]);
+    // [windowSize?.height, router.asPath]);  you can add router dependency for multiple page website
 
     const setBodyHeight = () => {
         document.body.style.height = `${
