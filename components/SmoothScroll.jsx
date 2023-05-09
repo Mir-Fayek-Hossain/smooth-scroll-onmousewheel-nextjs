@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 
 const SmoothScroll = ({ children }) => {
     const router = useRouter();
+    
     // 1.
     const windowSize = useWindowSize();
 
