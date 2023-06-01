@@ -26,6 +26,7 @@ export default function Home() {
                     <Link
                         className="text-sky-500 underline"
                         href="https://github.com/Mir-Fayek-Hossain/smooth-scroll-onmousewheel-nextjs"
+                        target="_blank"
                     >
                         smooth-scroll-onmousewheel-nextjs
                     </Link>
@@ -53,6 +54,7 @@ export default function Home() {
                     <Link
                         className="text-sky-500 underline"
                         href="https://www.linkedin.com/in/mir-fayek-hossain-49920a233/"
+                        target="_blank"
                     >
                         Mir Fayek Hossain
                     </Link>
@@ -61,6 +63,7 @@ export default function Home() {
                     <Link
                         className="text-sky-500 underline"
                         href="mailto:mirfayekhossain@gmail.com"
+                        target="_blank"
                     >
                         mirfayekhossain@gmail.com
                     </Link>
