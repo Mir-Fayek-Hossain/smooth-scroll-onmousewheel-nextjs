@@ -1,18 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
     margin: 0%;
     padding: 0;
-}
-.box {
-    width: 500px;
-    height: 500px;
-    background-color: red;
-}
-p {
-    font-size: 5rem;
-}
-.container {
-    position: relative;
 }
 .smooth-scroll-container {
     position: fixed;
@@ -23,5 +15,5 @@ p {
     overflow: hidden;
     max-width: 100vw;
     max-height: 100vh;
-    background-color: green;
+    background-color: rgb(236, 165, 59);
 }

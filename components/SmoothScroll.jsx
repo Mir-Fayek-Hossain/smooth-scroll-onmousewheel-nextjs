@@ -1,11 +1,11 @@
 import { useEffect, useRef } from "react";
 
-import useWindowSize from "../hooks/useWindowSize";
 import { useRouter } from "next/router";
+import useWindowSize from "../hooks/useWindowSize";
 
 const SmoothScroll = ({ children }) => {
     const router = useRouter();
-    
+
     // 1.
     const windowSize = useWindowSize();
 
@@ -14,7 +14,7 @@ const SmoothScroll = ({ children }) => {
 
     // 3.
     const data = {
-        ease: 0.01,
+        ease: 0.01, //Speed of scroll you can put 0.1 or 0.001 or 0.05 what ever you want
         current: 0,
         previous: 0,
         rounded: 0,
