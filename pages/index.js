@@ -1,4 +1,5 @@
 import SmoothScroll from "@/components/SmoothScroll";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -20,7 +21,15 @@ export default function Home() {
                     desired smooth scroll effect.
                 </p>
                 <br />
-                <p>Github Repo :asdsaf</p>
+                <p>
+                    Github Repo :{" "}
+                    <Link
+                        className="text-sky-500 underline"
+                        href="https://github.com/Mir-Fayek-Hossain/smooth-scroll-onmousewheel-nextjs"
+                    >
+                        smooth-scroll-onmousewheel-nextjs
+                    </Link>
+                </p>
                 <br />
                 <p>
                     The GitHub repository provides a comprehensive
@@ -28,10 +37,33 @@ export default function Home() {
                     approach to implementing this feature.
                 </p>
                 <br />
+                <br />
                 <p className="text-red-400 font-semibold">
                     Remember to carefully understand and execute the code to
                     avoid any unexpected issues and ensure a professional
                     implementation in your Next.js or React.js project.
+                </p>
+                <br />
+                <br />
+                <p>
+                    If you encounter any issues or believe there are updates
+                    that need to be made, please feel free to reach out to me on
+                    <br />
+                    LinkedIn :{" "}
+                    <Link
+                        className="text-sky-500 underline"
+                        href="https://www.linkedin.com/in/mir-fayek-hossain-49920a233/"
+                    >
+                        Mir Fayek Hossain
+                    </Link>
+                    <br />
+                    Gmail :{" "}
+                    <Link
+                        className="text-sky-500 underline"
+                        href="mailto:mirfayekhossain@gmail.com"
+                    >
+                        mirfayekhossain@gmail.com
+                    </Link>
                 </p>
                 <h2 className="text-3xl mt-24 text-justify">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -78,7 +110,9 @@ export default function Home() {
                     est nesciunt?
                 </h2>
             </div>
-            <p className="w-full bg-gray-700 text-white bold text-center">The End</p>
+            <p className="w-full bg-gray-700 text-white bold text-center">
+                The End
+            </p>
         </SmoothScroll>
     );
 }
