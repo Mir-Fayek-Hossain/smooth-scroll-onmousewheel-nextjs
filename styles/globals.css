@@ -1,21 +1,4 @@
-/* .section {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    align-items: center;
-    height: 100vh;
-}
 
-.block {
-    width: 250px;
-    height: 250px;
-    padding: 60px;
-    background-color: peachpuff;
-}
-
-.container {
-    width: 500px;
-} */
 * {
     margin: 0%;
     padding: 0;
@@ -31,7 +14,7 @@ p {
 .container {
     position: relative;
 }
-.ppparent {
+.smooth-scroll-container {
     position: fixed;
     top: 0;
     left: 0;

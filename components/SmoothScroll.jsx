@@ -57,7 +57,7 @@ const SmoothScroll = ({ children }) => {
     };
 
     return (
-        <div className="ppparent">
+        <div className="smooth-scroll-container">
             <div ref={scrollingContainerRef}>{children}</div>
         </div>
     );
